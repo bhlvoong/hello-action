@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: bhlvoong/hello-action@v1
+        uses: bhlvoong/hello-action
         with:
           who-to-greet: 'Takeya Water Bottle'
       # Use the output from the `hello` step
