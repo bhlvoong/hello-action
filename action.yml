@@ -9,7 +9,7 @@ inputs:
   gpu-name:
     description: 'Name of GPU'
     required: true
-    default: "Default nVidia"
+    default: "Default nVidia "
 outputs:
   time: # id of output
     description: 'The time we greeted you'
@@ -17,5 +17,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
-    - ${{ inputs.gpu-name }}
+    - ${{ inputs.who-to-greet, inputs.gpu-name }}
