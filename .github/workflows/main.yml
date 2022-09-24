@@ -10,6 +10,7 @@ jobs:
         uses: bhlvoong/hello-action@v1
         with:
           who-to-greet: 'Takeya Water Bottle'
+          gpu-name: 'AMD Radeon RX 6800XT'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
