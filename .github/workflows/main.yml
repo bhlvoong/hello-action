@@ -7,7 +7,8 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: bhlvoong/hello-action@main
+        # uses: bhlvoong/hello-action@main
+        uses: actions/checkout@v1
         with:
           who-to-greet: 'Takeya Water Bottle'
           gpu-name: 'AMD Radeon RX 6800XT'
